@@ -14,11 +14,24 @@
 
 </head>
 <body>
-    <header class="pt-4 bg-linear-to-b from-white to-green-100">
-        <nav class="flex container justify-between gap-2  mx-auto">
-            <img src="./assets/nav-logo.png" alt="" class="w-30 h-auto ">
+    <!-- Header -->
+     
 
-            <ul class="flex gap-3 items-center  text-[20px]">
+    <header class=" pt-4 bg-linear-to-b from-white to-green-100">
+
+        <!-- NAV -->
+
+        <nav class="flex container justify-between gap-2  mx-auto border-b border-green-500 md:border-0 pb-3 px-4">
+
+            <!-- Logo -->
+
+            <img src="./assets/nav-logo.png" alt="" class="md:w-30 w-20 h-auto ">
+
+            <!-- nav items -->
+
+            
+
+            <ul class="hidden md:flex gap-3 items-center  text-[20px]">
                 <li>Products</li>
                 <li>Services</li>
                 <li>Contact us</li>
@@ -26,33 +39,48 @@
 
             </ul>
 
-            <div class="flex gap-3 items-center">
+            <!-- nav icons -->
+
+            <div class="hidden md:flex gap-3 items-center">
                 <span><i class="fa-solid fa-magnifying-glass"></i></span>
                 <span><i class="fa-solid fa-cart-shopping"></i></span>
                 <button class="rounded border border-green-500 font-semibold py-1 px-4">Login</button>
                 <button class="rounded border border-green-500 bg-green-500 text-white font-semibold py-1 px-4">Register</button>
             </div>
+            <span class="block md:hidden"><i class="fa-solid fa-bars"></i></span>
         </nav>
 
-        <section class="text-center pt-15 container mx-auto">
+        <!-- Hero -->
+
+        <section class="text-center pt-8 md:pt-15 max-w-[90%] md:container mx-auto">
             <div class="max-w-[70%] mx-auto">
-                <h2 class="text-5xl font-semibold">Freshness <span class="text-green-500 ">You Can <br>
+
+                <!-- hero text -->
+                <h2 class="text-3xl md:text-5xl font-semibold">Freshness <span class="text-green-500 ">You Can <br>
                 Count</span> On, Prices You’ll Love!</h2>
-                    <p class="py-5 font-semibold text-[18px]">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
+
+                <!-- hero describe -->
+                    <p class="py-5 md:font-semibold text-[18px]">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
 
 
             </div>
             
+            <!-- hero image  -->
+
             <img src="./assets/Hero Section 1.png" alt="" class="max-w-[80%] mx-auto">
         </section>
     </header>
 
     <!-- services -->
 
-    <section class="container mx-auto my-20">
+    <section class="max-w-[90%] md:container px-4 mx-auto my-10 md:my-20">
 
-        <h2 class="text-green-500 font-bold text-4xl  mb-10 ">Services</h2>
+        
+        <h2 class="text-green-500 font-bold text-4xl mb-5  md:mb-10 ">Services</h2>
         <div class="flex flex-col md:flex-row gap-4" >
+
+    <!-- services item 1-->
+
             <div class="text-center bg-[#EFEBE3] p-8 rounded-md space-y-4 flex-1">
                 <div class="bg-white rounded-full w-30 h-30 mx-auto  p-4">
                     <img src="./assets/service.png" alt="" >
@@ -61,6 +89,8 @@
                 <p >Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit, sed do <br>eiusmod tempor incididunt</p>
             </div>
 
+            <!-- services item 2-->
+
             <div class="text-center bg-[#EFEBE3] p-8 rounded-md space-y-4 flex-1">
                 <div class="bg-white rounded-full w-30 h-30 mx-auto  p-4">
                     <img src="./assets/delivery.png" alt="" >
@@ -68,6 +98,8 @@
                 <h2 class="font-semibold text-[22px] ">Fast Delivery </h2>
                 <p >Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit, sed do <br>eiusmod tempor incididunt</p>
             </div>
+
+            <!-- services item 3-->
 
             <div class="text-center bg-[#EFEBE3] p-8 rounded-md space-y-4 flex-1">
                 <div class="bg-white rounded-full w-30 h-30 mx-auto  p-4">
@@ -82,21 +114,135 @@
     </section>
 
     <!-- Popular Products -->
-     <section class="bg-[#EFEBE3] py-20">
-        <div class="container mx-auto">
-            <h2 class="text-green-500 font-bold text-4xl  mb-10 ">Popular Products</h2>
+
+     <section class="bg-[#EFEBE3] md:py-20 py-10 px-4">
+        <div class="max-w-[90%] md:container mx-auto">
+            <h2 class="text-green-500 font-bold text-4xl  md:mb-10 mb-5 ">Popular Products</h2>
 
             <div class="grid grid-cols-12 gap-4">
 
-                <div class="col-span-3 h-100 bg-linear-to-br from-green-500 to-white rounded-md pt-8 pl-5 space-y-4">
+
+                <!-- Popular Products Left -->
+ 
+                <div class="relative col-span-12 md:col-span-3 h-85 bg-[linear-gradient(to_bottom_right,var(--color-green-500),white)] rounded-md pt-8 pl-5 space-y-4 ">
                     <h2 class="text-white font-semibold text-3xl ">30% off</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, consectetur!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
                      <button class="rounded  bg-white font-semibold py-1.5 px-5">Buy Now</button>
+
+                     <img src="./assets/Mask group.png" alt="" class="absolute right-0 bottom-0" >
 
 
                 </div>
 
-                <div class="col-span-9 h-100 bg-amber-200 rounded-md">
+
+     
+                <!-- Popular Products right -->
+
+                <div class="col-span-12 md:col-span-9 h-85 grid grid-cols-12 gap-6">
+
+                    <!-- Popular Products right item 1-->
+
+                    <div class="lg:col-span-4 col-span-6 flex flex-col justify-between h-full">
+                        
+                        
+                        <div class="flex gap-6 justify-start items-start bg-white rounded-[10px] py-3 pl-3">
+                        <img src="./assets/onion.png" alt="" class="h-20 w-20">
+                        <div class="space-y-1">
+                            <span><i class="fa-solid fa-star text-red-500"></i> 4.5</span>
+                            <h2 class="font-bold text-2xl">Onion</h2>
+                            <p>$39.99</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-6 justify-start items-start bg-white rounded-[10px] py-3 pl-3">
+                        <img src="./assets/tomato.png" alt="" class="h-20 w-20">
+                        <div class="space-y-1">
+                            <span><i class="fa-solid fa-star text-red-500"></i> 4.5</span>
+                            <h2 class="font-bold text-2xl">Tomato</h2>
+                            <p>$39.99</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6 justify-start items-start bg-white rounded-[10px] py-3 pl-3">
+                        <img src="./assets/potato.png" alt="" class="h-20 w-20">
+                        <div class="space-y-1">
+                            <span><i class="fa-solid fa-star text-red-500"></i> 4.5</span>
+                            <h2 class="font-bold text-2xl">Potato</h2>
+                            <p>$39.99</p>
+                        </div>
+                    </div>
+
+                    </div>
+
+                    <!-- Popular Products right item 2-->
+
+
+                    <div class="lg:col-span-4 col-span-6 flex flex-col justify-between h-full">
+                        
+                        
+                        <div class="flex gap-6 justify-start items-start bg-white rounded-[10px] py-3 pl-3">
+                        <img src="./assets/potato.png" alt="" class="h-20 w-20">
+                        <div class="space-y-1">
+                            <span><i class="fa-solid fa-star text-red-500"></i> 4.5</span>
+                            <h2 class="font-bold text-2xl">Potato</h2>
+                            <p>$39.99</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-6 justify-start items-start bg-white rounded-[10px] py-3 pl-3">
+                        <img src="./assets/onion.png" alt="" class="h-20 w-20">
+                        <div class="space-y-1">
+                            <span><i class="fa-solid fa-star text-red-500"></i> 4.5</span>
+                            <h2 class="font-bold text-2xl">Onion</h2>
+                            <p>$39.99</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6 justify-start items-start bg-white rounded-[10px] py-3 pl-3">
+                        <img src="./assets/onion.png" alt="" class="h-20 w-20">
+                        <div class="space-y-1">
+                            <span><i class="fa-solid fa-star text-red-500"></i> 4.5</span>
+                            <h2 class="font-bold text-2xl">Onion</h2>
+                            <p>$39.99</p>
+                        </div>
+                    </div>
+
+                    </div>
+
+                    <!-- Popular Products right item 3-->
+
+
+                    <div class="col-span-4 lg:flex hidden flex-col justify-between h-full">
+                        
+                        
+                        <div class="flex gap-6 justify-start items-start bg-white rounded-[10px] py-3 pl-3">
+                        <img src="./assets/tomato.png" alt="" class="h-20 w-20">
+                        <div class="space-y-1">
+                            <span><i class="fa-solid fa-star text-red-500"></i> 4.5</span>
+                            <h2 class="font-bold text-2xl">Tomato</h2>
+                            <p>$39.99</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-6 justify-start items-start bg-white rounded-[10px] py-3 pl-3">
+                        <img src="./assets/onion.png" alt="" class="h-20 w-20">
+                        <div class="space-y-1">
+                            <span><i class="fa-solid fa-star text-red-500"></i> 4.5</span>
+                            <h2 class="font-bold text-2xl">Onion</h2>
+                            <p>$39.99</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6 justify-start items-start bg-white rounded-[10px] py-3 pl-3">
+                        <img src="./assets/potato.png" alt="" class="h-20 w-20">
+                        <div class="space-y-1">
+                            <span><i class="fa-solid fa-star text-red-500"></i> 4.5</span>
+                            <h2 class="font-bold text-2xl">Potato</h2>
+                            <p>$39.99</p>
+                        </div>
+                    </div>
+
+                    </div>
+                    
+
+                    
 
                 </div>
             </div>
@@ -104,9 +250,58 @@
         </div>
      </section>
 
+      <!-- Arrival & Offers -->
+
+    <section class="max-w-[90%] md:container mx-auto my-10 md:my-20 px-4">
+
+        
+        <h2 class="text-green-500 font-bold text-4xl mb-5  md:mb-10 ">Arrival & Offers</h2>
+        <div class="grid grid-cols-12 gap-4" >
+
+    <!-- Arrival & Offers item 1-->
+
+            <div class=" relative bg-green-700  rounded-md col-span-12 lg:col-span-7 grid grid-cols-12 pt-4">
+
+                <div class="col-span-7   flex flex-col justify-center space-y-4   pl-4 ">
+                    <img src="./assets/dawat-logo.png" alt="" class="max-w-40">
+
+                    <button class="rounded w-50 md-w-70  bg-green-400 text-white py-1.5 px-5">Cook Exotic Dishes</button>
+
+                    <h2 class=" text-[24px] text-white ">UP to <span class="font-bold">20% OFF</span> </h2>
+                </div>
+                <div class="col-span-5 flex items-end"><img  src="./assets/offers-1.png" alt="" class="w-50 lg:w-60 h-45 lg:h-55"></div>
+                
+                
+                
+            </div>
+
+            <!-- Arrival & Offers item 2-->
+
+            <div class=" relative bg-[#102861]  rounded-md col-span-12 lg:col-span-5 grid grid-cols-12 pt-4">
+
+                <div class="col-span-7   flex flex-col justify-center space-y-4   pl-4 ">
+                    <img src="./assets/gate-logo.png" alt="" class="max-h-35 w-15">
+
+                    <button class="rounded w-50 md-w-70  bg-[#34539c]  text-white py-1.5 px-5">World’s No.1 Rice</button>
+
+                    <h2 class=" text-[24px] text-white ">UP to <span class="font-bold">40% OFF</span> </h2>
+                </div>
+                <div class="col-span-5 flex items-end"><img  src="./assets/offers-2.png" alt="" class="w-30 lg:w-40 h-45 lg:h-55"></div>
+                
+                
+                
+            </div>
+            
+
+            
+
+           
+        </div>
+    </section>
 
 
 
+<div class="h-[500px]"></div>
 
 
 
